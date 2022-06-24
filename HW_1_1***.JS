@@ -8,7 +8,7 @@
  let age_2 = 18
  let age_3 = 60
 const checkAge = function(age){
-
+ if (age) {
  if (age < age_2){
     console.log("You dont have access cause your age is" + " " + age + " " + "Its less then ")
  }else if (age >=  age_2 && age <  age_3){
