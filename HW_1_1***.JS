@@ -74,3 +74,27 @@ if(age && !isNaN(age)){
 
 4***:
 Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+
+ let age_2 = 18
+ let age_3 = 60
+const checkAge = function(age){
+if(age && !isNaN(age)){
+
+    
+ if (age) {
+ if (age < age_2){
+    alert("You dont have access cause your age is" + " " + age + " " + "Its less then ")
+ }else if (age >=  age_2 && age <  age_3){
+    alert("Welcome  !")
+ }else if (age  > age_3){
+    alert("Keep calm and look Culture channel")
+ }else {
+    alert("Technical work")
+ }
+} else{
+    alert('Error,is type not number')
+ }
+ }
+}
+let a = prompt ('Inter now')
+checkAge(a)
