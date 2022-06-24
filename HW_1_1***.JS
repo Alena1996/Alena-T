@@ -30,7 +30,7 @@ checkAge(61)
  const age_3 = 60
 const checkAge = function(age){
    age = Number(age)
- if (typeof age == 'number') {
+ if (age && !isNaN(age)) {
  if (age < age_2){
     console.log("You dont have access cause your age is" + " " + age + " " + "Its less then ")
  }else if (age >=  age_2 && age <  age_3){
