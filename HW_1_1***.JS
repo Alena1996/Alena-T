@@ -18,10 +18,11 @@ const checkAge = function(age){
  }else {
     console.log("Technical work")
  }
-} else{
-    console.log('Error,is type not number')
- }
+} 
 }
+checkAge(17)
+checkAge(18)
+checkAge(61)
 2*:
 Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
 
