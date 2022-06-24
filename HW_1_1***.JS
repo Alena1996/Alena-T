@@ -98,3 +98,4 @@ if(age && !isNaN(age)){
 }
 let a = prompt ('Inter now')
 checkAge(a)
+
