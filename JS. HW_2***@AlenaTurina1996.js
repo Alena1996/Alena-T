@@ -43,8 +43,30 @@ e.g. function getWordStructure(word)
 Слово (word) состоит из  (число) гласных и (число) согласных букв
 
 Проверки: 'case', 'Case', 'Check-list'
+function getWordStructure(word){ 
+    let vowels = 'aeiouy'.split('');
+    let consonants = 'bcdfghjklmnpqrstvwxz'.split('');
+    let vowelsCount = 0;
+    let constantsCount = 0;
+    for(const char of word){
+        if (vowels.includes(char)) vowelsCount++
+        else if (consonants.includes(char)) constantsCount++
+    }
+
+console.log(`В слове ${word} : ${vowelsCount} гласных и ${constantsCount} согласных букв`)
+}
+getWordStructure("case")
 
 4**. Написать функцию, которая проверяет, является ли слово палиндромом
 e.g. function isPalindrom(word)
 
 Проверки: 'abba', 'Abba'
+function isPalindrom(word) {
+  for (let a = 0, b =word.lenght -1 ; a<word.lenght, b>=0; a++, b--){
+    if(word[a] !==word[a]){
+        return false
+    }
+  }
+  return true
+}
+console.log(isPalindrom('abba'))
